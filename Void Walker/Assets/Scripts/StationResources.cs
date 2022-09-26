@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Resources
+public class StationResources
 {
     private float money;
     public float GetMoney()
@@ -102,7 +102,7 @@ public class Resources
         population += amount;
     }
 
-    public Resources()
+    public StationResources()
     {
         this.money = 0;
         this.oxygen = 0;
