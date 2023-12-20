@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class AnchorPoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool isUsed = false;
+    public float angle = 0; // Says which way any possible module attached to this point should be facing, from 0 to 360 (0 is up)
 
-    // Update is called once per frame
+    private SpriteRenderer colorSprite;
+    void Awake()
+    {
+        colorSprite = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
         
+    }
+    public SpriteRenderer GetColorSprite()
+    {
+        return colorSprite;
     }
 }
